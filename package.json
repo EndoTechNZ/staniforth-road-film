@@ -1,0 +1,7 @@
+{
+  "name": "staniforth-road-film",
+  "private": true,
+  "type": "module",
+  "scripts": {"build": "astro build"},
+  "dependencies": {"astro": "^5.6.1"}
+}
