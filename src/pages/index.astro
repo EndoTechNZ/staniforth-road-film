@@ -1,13 +1,13 @@
 ---
 const base=import.meta.env.BASE_URL.replace(/\/?$/, '/');
 const chapters=[
- {at:17,date:'SEPTEMBER–OCTOBER 2021',title:'The beginning'},
- {at:61,date:'NOVEMBER 2021–MARCH 2022',title:'Looking beneath'},
- {at:97,date:'JULY–DECEMBER 2023',title:'Back to the bones'},
- {at:129,date:'JANUARY–DECEMBER 2024',title:'A new exterior'},
- {at:177,date:'JANUARY–JULY 2025',title:'Rebuilding within'},
- {at:219,date:'AUGUST–OCTOBER 2025',title:'Rooms take shape'},
- {at:259,date:'MARCH–OCTOBER 2026',title:'A new chapter'}
+ {at:17.0,date:'SEPTEMBER–OCTOBER 2021',title:'The beginning'},
+ {at:55.366667,date:'NOVEMBER 2021–MARCH 2022',title:'Looking beneath'},
+ {at:86.433333,date:'JULY–DECEMBER 2023',title:'Back to the bones'},
+ {at:113.3,date:'JANUARY–DECEMBER 2024',title:'A new exterior'},
+ {at:155.766667,date:'JANUARY–JULY 2025',title:'Rebuilding within'},
+ {at:191.533333,date:'AUGUST–OCTOBER 2025',title:'Rooms take shape'},
+ {at:225.9,date:'MARCH–OCTOBER 2026',title:'A new chapter'}
 ];
 ---
 <!doctype html>
@@ -15,29 +15,29 @@ const chapters=[
 <head>
  <meta charset="utf-8" />
  <meta name="viewport" content="width=device-width, initial-scale=1" />
- <meta name="description" content="The Staniforth Road house restoration, told in a six-minute cinematic film. Seven chapters, original photographs and video, September 2021 to October 2026." />
+ <meta name="description" content="The Staniforth Road house restoration, told in a five-minute cinematic film. Seven chapters, original photographs and video, September 2021 to October 2026." />
  <meta name="robots" content="noindex,nofollow" />
  <meta name="theme-color" content="#19251f" />
  <meta property="og:title" content="Staniforth Road — A house, reimagined" />
- <meta property="og:description" content="A six-minute renovation film · Seven chapters · 2021–2026" />
- <meta property="og:image" content="https://endotechnz.github.io/staniforth-road-film/media/poster-five-minute.jpg?v=house-garden" />
+ <meta property="og:description" content="A five-minute renovation film · Seven chapters · 2021–2026" />
+ <meta property="og:image" content="https://endotechnz.github.io/staniforth-road-film/media/poster-five-minute.jpg?v=freeze-days" />
  <title>Staniforth Road — A house, reimagined</title>
 </head>
 <body>
- <header><a class="wordmark" href={base}>STANIFORTH ROAD</a><span class="top-meta">A PERSONAL FILM <span aria-hidden="true">/</span> 2021—2026</span></header>
+ <header><a class="wordmark" href={`${base}?v=freeze-days`}>STANIFORTH ROAD</a><span class="top-meta">A PERSONAL FILM <span aria-hidden="true">/</span> 2021—2026</span></header>
  <main>
   <section class="intro" aria-labelledby="title">
    <p class="eyebrow">SEVEN CHAPTERS. ONE HOUSE.</p>
-   <div class="title-row"><h1 id="title">A house,<br /><em>reimagined.</em></h1><div class="intro-aside"><p>From weathered beginnings<br />to a new chapter.</p><div class="runtime"><span class="dot"></span> 6 MIN 22 SEC &nbsp;·&nbsp; 7 CHAPTERS</div></div></div>
+   <div class="title-row"><h1 id="title">A house,<br /><em>reimagined.</em></h1><div class="intro-aside"><p>From weathered beginnings<br />to a new chapter.</p><div class="runtime"><span class="dot"></span> 5 MINUTES &nbsp;·&nbsp; 7 CHAPTERS</div></div></div>
   </section>
   <section class="film-section" aria-label="Renovation film">
-   <div class="player-shell"><video id="film" controls playsinline preload="metadata" poster={`${base}media/poster-five-minute.jpg?v=house-garden`} src={`${base}media/staniforth-road-five-minute.mp4?v=house-garden`} data-stream={`${base}media/film-five-minute/master.m3u8?v=house-garden`} aria-label="Staniforth Road: A house, reimagined, six-minute renovation film"></video></div>
-   <div class="film-caption"><div><span class="caption-index">01—07</span><span>THE STANIFORTH ROAD RENOVATION</span></div><div class="actions"><button id="share" type="button">Share film <span aria-hidden="true">↗</span></button><a href={`${base}media/staniforth-road-five-minute.mp4?v=house-garden`} download="Staniforth-Road-Renovation-Film.mp4">Download film <span aria-hidden="true">↓</span></a></div></div>
+   <div class="player-shell"><video id="film" controls playsinline preload="metadata" poster={`${base}media/poster-five-minute.jpg?v=freeze-days`} src={`${base}media/staniforth-road-five-minute.mp4?v=freeze-days`} data-stream={`${base}media/film-five-minute/master.m3u8?v=freeze-days`} aria-label="Staniforth Road: A house, reimagined, five-minute renovation film"></video></div>
+   <div class="film-caption"><div><span class="caption-index">01—07</span><span>THE STANIFORTH ROAD RENOVATION</span></div><div class="actions"><button id="share" type="button">Share film <span aria-hidden="true">↗</span></button><a href={`${base}media/staniforth-road-five-minute.mp4?v=freeze-days`} download="Staniforth-Road-Renovation-Film.mp4">Download film <span aria-hidden="true">↓</span></a></div></div>
    <p id="share-status" role="status" aria-live="polite"></p>
   </section>
-  <section class="chapters" aria-labelledby="chapter-heading"><div class="chapter-heading"><h2 id="chapter-heading">The chapters</h2><p>Choose a chapter to jump into the film.</p></div><ol>{chapters.map((c,i)=><li><button type="button" data-time={c.at} class="chapter"><span class="number">0{i+1}</span><img class="chapter-art" src={`${base}media/chapter-${String(i+1).padStart(2,'0')}.svg`} alt="" aria-hidden="true" loading="lazy" /><span class="chapter-content"><span class="date">{c.date}</span><span class="chapter-title">{c.title}</span></span><span class="arrow" aria-hidden="true">↗</span></button></li>)}</ol><div class="portrait-download"><a href={`${base}media/Staniforth-Road-Seven-Chapter-Pictures.zip?v=house-garden`} download>Download the seven chapter pictures ↓</a></div></section>
+  <section class="chapters" aria-labelledby="chapter-heading"><div class="chapter-heading"><h2 id="chapter-heading">The chapters</h2><p>Choose a chapter to jump into the film.</p></div><ol>{chapters.map((c,i)=><li><button type="button" data-time={c.at} class="chapter"><span class="number">0{i+1}</span><img class="chapter-art" src={`${base}media/chapter-${String(i+1).padStart(2,'0')}.svg`} alt="" aria-hidden="true" loading="lazy" /><span class="chapter-content"><span class="date">{c.date}</span><span class="chapter-title">{c.title}</span></span><span class="arrow" aria-hidden="true">↗</span></button></li>)}</ol><div class="portrait-download"><a href={`${base}media/Staniforth-Road-Seven-Chapter-Pictures.zip?v=freeze-days`} download>Download the seven chapter pictures ↓</a></div></section>
  </main>
- <footer><div><span class="wordmark">STANIFORTH ROAD</span><p>Photographs and video from September 2021 to October 2026.<br />A story of patience, work, and making a home.</p></div><p class="music">Music: “I Love to Love” · remix<br />Personal collection · edited excerpt</p></footer>
+ <footer><div><span class="wordmark">STANIFORTH ROAD</span><p>Photographs and video from September 2021 to October 2026.<br />A story of patience, work, and making a home.</p></div><p class="music">Music: “Those Were the Days” · Mary Hopkin<br />Personal collection · blended repeat</p></footer>
  <script is:inline src={`${base}vendor/hls-1.7.3.min.js`}></script>
  <script>
   const film=document.querySelector<HTMLVideoElement>('#film')!;
@@ -52,7 +52,7 @@ const chapters=[
   }
   document.querySelectorAll<HTMLButtonElement>('[data-time]').forEach(button=>button.addEventListener('click',()=>{const seek=()=>{film.currentTime=Number(button.dataset.time);film.play().catch(()=>{});};if(film.readyState>0)seek();else film.addEventListener('loadedmetadata',seek,{once:true});film.scrollIntoView({behavior:'smooth',block:'center'});}));
   film.addEventListener('timeupdate',()=>{const buttons=[...document.querySelectorAll<HTMLButtonElement>('[data-time]')];const active=buttons.findLast(b=>Number(b.dataset.time)<=film.currentTime);buttons.forEach(b=>b.setAttribute('aria-current',b===active?'true':'false'));});
-  document.querySelector('#share')?.addEventListener('click',async()=>{const status=document.querySelector('#share-status')!;const data={title:'Staniforth Road — A house, reimagined',text:'Our house renovation, from the beginning to October 2026.',url:location.href};try{if(navigator.share){await navigator.share(data);}else{await navigator.clipboard.writeText(location.href);status.textContent='Link copied — ready to send.';}}catch(error){if(error instanceof Error && error.name!=='AbortError')status.textContent='Copy the address from your browser to share the film.';}});
+  document.querySelector('#share')?.addEventListener('click',async()=>{const status=document.querySelector('#share-status')!;const data={title:'Staniforth Road — A house, reimagined',text:'Our house renovation in five minutes, through October 2026.',url:location.href};try{if(navigator.share){await navigator.share(data);}else{await navigator.clipboard.writeText(location.href);status.textContent='Link copied — ready to send.';}}catch(error){if(error instanceof Error && error.name!=='AbortError')status.textContent='Copy the address from your browser to share the film.';}});
  </script>
  <style>
   :global(*){box-sizing:border-box}:global(html){background:#eff0e9;color:#19251f;scroll-behavior:smooth}:global(body){margin:0;font-family:Arial,sans-serif}a{color:inherit}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit}button:focus-visible,a:focus-visible{outline:3px solid #788a5e;outline-offset:6px}header,main,footer{max-width:1520px;margin:auto}header{padding:32px 64px;display:flex;justify-content:space-between;border-bottom:1px solid #cdd2c5}.wordmark{font-size:13px;font-weight:600;letter-spacing:3.5px;text-decoration:none}.top-meta{font-size:10px;letter-spacing:2.2px;color:#5c685a}.top-meta span{margin:0 16px}.intro{padding:76px 64px 55px}.eyebrow{font-size:10px;letter-spacing:3px;margin:0 0 26px;color:#607051}.title-row{display:flex;justify-content:space-between;align-items:end;gap:30px}h1{font:clamp(60px,7.1vw,110px)/.98 Georgia,serif;font-weight:400;letter-spacing:-4px;margin:0}h1 em{font-weight:400;color:#5e7255}.intro-aside{padding-bottom:7px}.intro-aside p{font:20px/1.5 Georgia,serif}.runtime{display:flex;align-items:center;font-size:10px;letter-spacing:1.9px;margin-top:32px}.dot{height:6px;width:6px;background:#71885b;border-radius:50%;margin-right:10px}.film-section{margin:0 40px}.player-shell{background:#171e1b;border:1px solid #203127;box-shadow:0 24px 60px #19251f22}video{width:100%;display:block;aspect-ratio:16/9;background:#171e1b}.film-caption{display:flex;justify-content:space-between;align-items:center;padding:22px 0 14px;gap:20px;font-size:10px;letter-spacing:1.5px}.film-caption>div:first-child{display:flex;align-items:center;gap:20px}.caption-index{color:#7a866d}.actions{display:flex;gap:24px;align-items:center}.actions button,.actions a{background:none;border:0;padding:5px 0;text-decoration:none;font-size:12px;letter-spacing:.2px;cursor:pointer}.actions span{margin-left:9px;color:#6a805a}#share-status{font-size:12px;height:14px;text-align:right;margin:0 0 10px}.chapters{padding:60px 64px 90px}.chapter-heading{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #bdc7b3;padding-bottom:20px}.chapter-heading h2{font:36px Georgia,serif;margin:0}.chapter-heading p{font-size:12px;color:#64715d}ol{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;column-gap:60px}.chapter{width:100%;display:flex;align-items:center;text-align:left;padding:23px 0;border:0;border-bottom:1px solid #d3d9cc;background:transparent;cursor:pointer;color:#19251f;gap:23px}.number{font-size:11px;color:#839174}.chapter-content{display:flex;flex-direction:column;gap:8px}.date{font-size:9px;letter-spacing:1.7px;color:#6c7a5f}.chapter-title{font:23px Georgia,serif}.arrow{margin-left:auto;color:#7d8e6b}.chapter:hover .chapter-title,.chapter[aria-current="true"] .chapter-title{color:#68824e}.chapter[aria-current="true"] .number{color:#365029;font-weight:bold}footer{padding:45px 64px 55px;border-top:1px solid #cdd2c5;display:flex;justify-content:space-between;gap:35px}footer p{font-size:11px;line-height:1.8;color:#67715f;margin:19px 0 0}.music{text-align:right;margin:0}footer a{text-underline-offset:3px}@media(max-width:700px){header{padding:24px}.top-meta{display:none}.intro{padding:50px 24px 32px}h1{letter-spacing:-2.5px}.title-row{display:block}.intro-aside{margin-top:25px;display:flex;align-items:center;justify-content:space-between;gap:15px}.intro-aside p{font-size:15px;margin:0}.runtime{font-size:8px;letter-spacing:1px;margin:0}.film-section{margin:0 12px}.film-caption{display:block;padding:18px 7px 0}.film-caption>div:first-child{font-size:8px;gap:12px}.actions{margin-top:16px;justify-content:flex-end}.chapters{padding:35px 24px 50px}.chapter-heading{display:block}.chapter-heading h2{font-size:29px}.chapter-heading p{margin-bottom:0}ol{grid-template-columns:1fr}.chapter-title{font-size:22px}footer{padding:30px 24px;display:block}.music{text-align:left;margin-top:24px}}@media(prefers-reduced-motion:reduce){:global(html){scroll-behavior:auto}}
