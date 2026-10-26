@@ -17,3 +17,5 @@ Photography remains the property of its owner. No reuse licence is granted for t
 The latest edition adds March 2022 and April 2025 source footage and expands the March 2026 interior chapter. Camera footage is stabilized with feature tracking and smoothed camera paths; the film uses 30fps to preserve the original video cadence.
 
 Eight of the fastest handheld pans are presented as sharp source-frame holds with restrained camera movement.
+
+The requested fireplace-room image has been removed from the opening and replaced with an exterior photograph from 17 September 2021. Duration, music and chapter markers are unchanged.
