@@ -20,22 +20,22 @@ const chapters=[
  <meta name="theme-color" content="#19251f" />
  <meta property="og:title" content="Staniforth Road — A house, reimagined" />
  <meta property="og:description" content="A five-minute renovation film · Seven chapters · 2021–2026" />
- <meta property="og:image" content="https://endotechnz.github.io/staniforth-road-film/media/poster-five-minute.jpg?v=freeze-days" />
+ <meta property="og:image" content="https://endotechnz.github.io/staniforth-road-film/media/poster-five-minute.jpg?v=smooth-ramps" />
  <title>Staniforth Road — A house, reimagined</title>
 </head>
 <body>
- <header><a class="wordmark" href={`${base}?v=freeze-days`}>STANIFORTH ROAD</a><span class="top-meta">A PERSONAL FILM <span aria-hidden="true">/</span> 2021—2026</span></header>
+ <header><a class="wordmark" href={`${base}?v=smooth-ramps`}>STANIFORTH ROAD</a><span class="top-meta">A PERSONAL FILM <span aria-hidden="true">/</span> 2021—2026</span></header>
  <main>
   <section class="intro" aria-labelledby="title">
    <p class="eyebrow">SEVEN CHAPTERS. ONE HOUSE.</p>
    <div class="title-row"><h1 id="title">A house,<br /><em>reimagined.</em></h1><div class="intro-aside"><p>From weathered beginnings<br />to a new chapter.</p><div class="runtime"><span class="dot"></span> 5 MINUTES &nbsp;·&nbsp; 7 CHAPTERS</div></div></div>
   </section>
   <section class="film-section" aria-label="Renovation film">
-   <div class="player-shell"><video id="film" controls playsinline preload="metadata" poster={`${base}media/poster-five-minute.jpg?v=freeze-days`} src={`${base}media/staniforth-road-five-minute.mp4?v=freeze-days`} data-stream={`${base}media/film-five-minute/master.m3u8?v=freeze-days`} aria-label="Staniforth Road: A house, reimagined, five-minute renovation film"></video></div>
-   <div class="film-caption"><div><span class="caption-index">01—07</span><span>THE STANIFORTH ROAD RENOVATION</span></div><div class="actions"><button id="share" type="button">Share film <span aria-hidden="true">↗</span></button><a href={`${base}media/staniforth-road-five-minute.mp4?v=freeze-days`} download="Staniforth-Road-Renovation-Film.mp4">Download film <span aria-hidden="true">↓</span></a></div></div>
+   <div class="player-shell"><video id="film" controls playsinline preload="metadata" poster={`${base}media/poster-five-minute.jpg?v=smooth-ramps`} src={`${base}media/staniforth-road-five-minute.mp4?v=smooth-ramps`} data-stream={`${base}media/film-five-minute/master.m3u8?v=smooth-ramps`} aria-label="Staniforth Road: A house, reimagined, five-minute renovation film"></video></div>
+   <div class="film-caption"><div><span class="caption-index">01—07</span><span>THE STANIFORTH ROAD RENOVATION</span></div><div class="actions"><button id="share" type="button">Share film <span aria-hidden="true">↗</span></button><a href={`${base}media/staniforth-road-five-minute.mp4?v=smooth-ramps`} download="Staniforth-Road-Renovation-Film.mp4">Download film <span aria-hidden="true">↓</span></a></div></div>
    <p id="share-status" role="status" aria-live="polite"></p>
   </section>
-  <section class="chapters" aria-labelledby="chapter-heading"><div class="chapter-heading"><h2 id="chapter-heading">The chapters</h2><p>Choose a chapter to jump into the film.</p></div><ol>{chapters.map((c,i)=><li><button type="button" data-time={c.at} class="chapter"><span class="number">0{i+1}</span><img class="chapter-art" src={`${base}media/chapter-${String(i+1).padStart(2,'0')}.svg`} alt="" aria-hidden="true" loading="lazy" /><span class="chapter-content"><span class="date">{c.date}</span><span class="chapter-title">{c.title}</span></span><span class="arrow" aria-hidden="true">↗</span></button></li>)}</ol><div class="portrait-download"><a href={`${base}media/Staniforth-Road-Seven-Chapter-Pictures.zip?v=freeze-days`} download>Download the seven chapter pictures ↓</a></div></section>
+  <section class="chapters" aria-labelledby="chapter-heading"><div class="chapter-heading"><h2 id="chapter-heading">The chapters</h2><p>Choose a chapter to jump into the film.</p></div><ol>{chapters.map((c,i)=><li><button type="button" data-time={c.at} class="chapter"><span class="number">0{i+1}</span><img class="chapter-art" src={`${base}media/chapter-${String(i+1).padStart(2,'0')}.svg`} alt="" aria-hidden="true" loading="lazy" /><span class="chapter-content"><span class="date">{c.date}</span><span class="chapter-title">{c.title}</span></span><span class="arrow" aria-hidden="true">↗</span></button></li>)}</ol><div class="portrait-download"><a href={`${base}media/Staniforth-Road-Seven-Chapter-Pictures.zip?v=smooth-ramps`} download>Download the seven chapter pictures ↓</a></div></section>
  </main>
  <footer><div><span class="wordmark">STANIFORTH ROAD</span><p>Photographs and video from September 2021 to October 2026.<br />A story of patience, work, and making a home.</p></div><p class="music">Music: “Those Were the Days” · Mary Hopkin<br />Personal collection · blended repeat</p></footer>
  <script is:inline src={`${base}vendor/hls-1.7.3.min.js`}></script>

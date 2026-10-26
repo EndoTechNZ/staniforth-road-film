@@ -2,7 +2,7 @@
 
 A personal five-minute film tracing the house renovation from September 2021 to October 2026 in seven chapters. The existing cinematic headings, character reveals and animated geometric architecture remain.
 
-This revision replaces continuous playback of the four newly added videos with 16 selected source-frame holds: three within seconds 8–15 of the gate clip, four kitchen/living views, four laundry/bedroom/bathroom views, and five October garden/house views. Each hold uses the same frozen source frame with a restrained digital push. Brief 0.6-second eased fast-forward passages travel through the original footage to the next view. Shutter blending is confined to those fast passages.
+This revision replaces continuous playback of the four newly added videos with 16 selected source-frame holds: three within seconds 8–15 of the gate clip, four kitchen/living views, four laundry/bedroom/bathroom views, and five October garden/house views. Each hold uses the same frozen source frame with a restrained digital push. Longer 1.6–2.7-second eased fast-forward passages travel through the original footage to the next view. All twelve ramps use quintic easing and bidirectional optical-flow interpolation, with bounded camera stabilization and shutter blending confined to fast passages. A single gentle push replaces the earlier zoom pulses and resets.
 
 The first six chapters retain their original title animation and video cadence. Six repetitive photographs are removed using eased dissolves to bring the complete film to 300 seconds at 30fps. The previously removed opening fireplace-room image remains excluded.
 
